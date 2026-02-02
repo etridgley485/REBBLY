@@ -1,0 +1,146 @@
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+  <meta charset="UTF-8">  
+  <title>REBBLY | PLTW Capstone</title>  
+  
+  <style>  
+    :root {  
+      --bg: #ffffff;  
+      --text: #111111;  
+      --accent: #4f46e5;  
+      --card: #f3f4f6;  
+    }  
+  
+    body.dark {  
+      --bg: #0f172a;  
+      --text: #e5e7eb;  
+      --card: #1e293b;  
+    }  
+  
+    body {  
+      margin: 0;  
+      font-family: Arial, Helvetica, sans-serif;  
+      background: var(--bg);  
+      color: var(--text);  
+      text-align: center;  
+    }  
+  
+    header {  
+      background: var(--accent);  
+      color: white;  
+      padding: 50px 20px;  
+    }  
+  
+    section {  
+      max-width: 900px;  
+      margin: auto;  
+      padding: 40px 20px;  
+    }  
+  
+    .card {  
+      background: var(--card);  
+      padding: 25px;  
+      border-radius: 10px;  
+      margin: 20px 0;  
+    }  
+  
+    button {  
+      padding: 12px 20px;  
+      font-size: 16px;  
+      border: none;  
+      border-radius: 8px;  
+      background: var(--accent);  
+      color: white;  
+      cursor: pointer;  
+      margin-top: 15px;  
+    }  
+  
+    button:hover {  
+      opacity: 0.9;  
+    }  
+  
+    footer {  
+      padding: 20px;  
+      font-size: 14px;  
+      opacity: 0.7;  
+    }  
+  
+    .hidden {  
+      display: none;  
+    }  
+  </style>  
+</head>  
+  
+<body>  
+  
+  <header>  
+    <h1>REBBLY</h1>  
+    <p>Engineering smarter solutions for a better future</p>  
+    <button onclick="toggleTheme()">Toggle Dark Mode</button>  
+  </header>  
+  
+  <section>  
+    <div class="card">  
+      <h2>Our Mission</h2>  
+      <p>  
+        REBBLY is a student-led engineering company focused on solving real-world  
+        problems through innovation, technology, and user-centered design.  
+      </p>  
+    </div>  
+  
+    <div class="card">  
+      <h2>The Problem</h2>  
+      <p>  
+        Many existing solutions are inefficient, outdated, or inaccessible.  
+        Our goal is to improve performance, usability, and reliability.  
+      </p>  
+    </div>  
+  
+    <div class="card">  
+      <h2>Our Solution</h2>  
+      <p>  
+        REBBLY designs intelligent systems that adapt to user needs and improve  
+        efficiency through smart engineering.  
+      </p>  
+      <button onclick="revealFeature()">Reveal Key Feature</button>  
+      <p id="feature" class="hidden">  
+        ✅ Adaptive technology that responds to user input in real time  
+      </p>  
+    </div>  
+  
+    <div class="card">  
+      <h2>Our Team</h2>  
+      <p>  
+        We are PLTW Capstone students collaborating across engineering,  
+        design, and problem-solving disciplines.  
+      </p>  
+    </div>  
+  
+    <div class="card">  
+      <h2>Contact</h2>  
+      <p>Email: contact@rebly.com</p>  
+      <button onclick="contact()">Send Message</button>  
+    </div>  
+  </section>  
+  
+  <footer>  
+    © 2026 REBBLY | PLTW Capstone Project  
+  </footer>  
+  
+  <script>  
+    function toggleTheme() {  
+      document.body.classList.toggle("dark");  
+    }  
+  
+    function revealFeature() {  
+      document.getElementById("feature").classList.toggle("hidden");  
+    }  
+  
+    function contact() {  
+      alert("Thank you for your interest in REBBLY!");  
+    }  
+  </script>  
+  
+</body>  
+</html>  
